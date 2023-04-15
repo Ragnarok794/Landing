@@ -15,6 +15,10 @@
     list-style-type:none;
     display: none;
 }
+
+.iconos{
+    height: 30px ;
+}
 .nav-links{
     text-decoration: none;
     color: rgb(19, 17, 17);

@@ -11,20 +11,29 @@
     border-bottom: 2px solid rgba(0,0,0,0.2);
 }
 
-.main-nav {
+.option-nav {
+    list-style-type:none;
+    display: none;
+}
+.perfil-nav {
     list-style-type:none;
     display: none;
 }
 
 .iconos{
-    height: 30px ;
+    height: 30px;
 }
 .nav-links{
     text-decoration: none;
     color: rgb(19, 17, 17);
 }
 
-.main-nav li{
+.option-nav li{
+    text-align: center;
+    margin: 15px auto;
+}
+
+.perfil-nav li{
     text-align: center;
     margin: 15px auto;
 }
@@ -42,17 +51,26 @@
     right: 25px;
     cursor: pointer;
 }
-
-#chkToggle  {
+.navbar-toggle2 {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    cursor: pointer;
+}
+.checkbox {
 display: none;
 }
 
-#chkToggle:checked +ul.main-nav{
+#chkToggle:checked +ul.option-nav{
+    display:block;
+}
+#perfiltoggle:checked +ul.perfil-nav{
     display:block;
 }
 
+
 @media screen and (min-width: 768px){
-    .main-nav{
+    .option-nav{
     max-width: 100px;
     position: absolute;
     right: 0px;
@@ -60,4 +78,12 @@ display: none;
     background-color: beige;
 
     }
+    .perfil-nav{
+        max-width: 100px;
+        position: absolute;
+        right: 100px;
+        font-size: 0.7em;
+        background-color: beige;
+    
+        }
 }

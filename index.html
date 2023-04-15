@@ -4,33 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>landing</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing</title>
 </head>
+
 <body>
-    <header class="encabezado">
-        <div class="titulo">InstAdrian</div>
-        <div>
-            <div class="logos">
-                <img src="./assets/usuario.png" alt="perfil" class="logo">
-            </div>
-            <div>
-                <nav class="navbar" type>
-                    <label for="chckbox" class="navbartoggle" id="navbartoggle"><img src="./assets/7693332.png" alt="opciones" id="chckbox" class="logo">
-                    <input type="checkbox" class="opciones">
-                        <ul class="main-nav">
-                            <li><a href="#" class="nav-links">Ajustes</a></li>
-                            <li><a href="#" class="nav-links"> Cerrar sesion</a></li>
-                        </ul>
-                
-                     </label>
+    
+    <nav class="navbar">
+        <p class="logo"> InstAdrian</p>
+        <label for="chkToggle" class="navbar-toggle" id="js-navbartoggle">🍔</label>
+        
+        <input type="checkbox" id="chkToggle"/>
+
+        <ul class="main-nav" id="js-options">
+            <li><a href="#" class="nav-links">Ajustes</a></li>
+            <li><a href="#" class="nav-links">Cerrar sesion</a></li>
+        </ul>
+    </nav>
 
 
-                </nav>
-            </div>
-        </div>
 
-         
-    </header>
 </body>
 </html>
